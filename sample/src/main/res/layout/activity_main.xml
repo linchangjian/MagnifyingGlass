@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <com.meitu.mopiview.widget.MopiImageView
+        android:id="@+id/miv_mopi"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@mipmap/renxiang" />
+
+    <LinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/miv_mopi">
+
+        <Button
+            android:id="@+id/btn_paint_width_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="笔粗+" />
+
+        <Button
+            android:id="@+id/btn_paint_width_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="笔粗-" />
+
+        <Button
+            android:id="@+id/btn_paint_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="笔色" />
+
+        <Button
+            android:id="@+id/btn_undo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="撤销" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_switch"
+        android:layout_below="@id/ll_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Switch
+            android:id="@+id/s_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="画笔历史痕迹" />
+
+        <Switch
+            android:id="@+id/s_eraser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="橡皮或则画笔" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_btn_eraser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_switch"
+
+        >
+
+        <Button
+            android:id="@+id/btn_eraser_width_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="橡皮笔粗+" />
+
+        <Button
+            android:id="@+id/btn_eraser_width_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="橡皮笔粗-" />
+
+        <Button
+            android:id="@+id/btn_eraser_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="橡皮色" />
+
+
+    </LinearLayout>
+</RelativeLayout>
